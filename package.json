@@ -1,6 +1,6 @@
 {
   "name": "com.brunogattai.gattaitools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Gattai Tools",
   "description": "Reusable components developed by Bruno Gattai.",
   "unity": "2020.3",
@@ -15,5 +15,12 @@
     "email": "brunogattai1996@gmail.com",
     "url": "https://www.linkedin.com/in/bruno-gattai/"
   },
-  "type": "tool"
+  "type": "tool",
+  "samples": [
+    {
+      "displayName": "Asset teste",
+      "description": "Testando importação de asset em um package",
+      "path": "Samples~/Teste"
+    }
+  ]
 }
