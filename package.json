@@ -1,0 +1,19 @@
+{
+  "name": "com.brunogattai.gattaitools",
+  "version": "1.0.0",
+  "displayName": "Gattai Tools",
+  "description": "Reusable components developed by Bruno Gattai.",
+  "unity": "2020.3",
+  "unityRelease": "22f1",
+  "keywords": [
+    "tools",
+    "components",
+    "reusable"
+  ],
+  "author": {
+    "name": "Bruno Gattai",
+    "email": "brunogattai1996@gmail.com",
+    "url": "https://www.linkedin.com/in/bruno-gattai/"
+  },
+  "type": "tool"
+}
