@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using DG.Tweening;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -268,13 +266,13 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
         {
             _pageSelectionImages[_previousPageSelectionIndex].sprite = unselectedPage;
             _pageSelectionImages[_previousPageSelectionIndex].color = unselectedColor;
-            _pageSelectionImages[_previousPageSelectionIndex].transform.DOScale(1f, 0.3f);
+            _pageSelectionImages[_previousPageSelectionIndex].transform.localScale = new Vector2(1f, 0.3f);
         }
 
         // select new
         _pageSelectionImages[aPageIndex].sprite = selectedPage;
         _pageSelectionImages[aPageIndex].color = selectedColor;
-        _pageSelectionImages[aPageIndex].transform.DOScale(1.25f, 0.3f);
+        _pageSelectionImages[aPageIndex].transform.localScale = new Vector2(1.25f, 0.3f);
 
         // Deactivate next and previous buttons if its necessary
         prevButton.interactable = aPageIndex != 0;
