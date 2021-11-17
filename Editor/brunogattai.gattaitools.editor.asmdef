@@ -1,3 +1,16 @@
 {
-	"name": "brunogattai.gattaitoolseditor"
+    "name": "brunogattai.gattaitoolseditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8b2cebfc7ef7e2b47a612155a20d6a91"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
