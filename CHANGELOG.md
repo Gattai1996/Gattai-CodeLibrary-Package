@@ -1,8 +1,12 @@
 # Changelog
 Todas as mudanças notáveis desse projeto serão documentadas nesse arquivo.
 
+## [0.1.1] - 18-11-2021
+### Adicionado
+- Sample da classe Sfx Audio Event
+
 ## [0.1.0] - 17-11-2021
-### Added
+### Adicionado
 - AudioEvent, um ScriptableObject que pode ser herdado para configuração de assets de áudio no modo editor.
 - SfxAudioEvent, uma classe que herda de Audio Event e pode ser usada para configuração avançada de efeitos sonoros, com múltiplos áudios, range de volume e ecos que são aleatórios, e é possível testar o resultado diretamente no modo editor com o clique do botão "Preview".
 - RangedFloat, um tipo similar a float que pode ser configurado um range entre dois números no modo editor. 

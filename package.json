@@ -1,6 +1,6 @@
 {
   "name": "com.brunogattai.gattaitools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Gattai Tools",
   "description": "Reusable components developed by Bruno Gattai.",
   "unity": "2020.3",
@@ -18,9 +18,9 @@
   "type": "tool",
   "samples": [
     {
-      "displayName": "Asset teste",
-      "description": "Testando importa\u00e7\u00e3o de asset em um package",
-      "path": "Samples~/Teste"
+      "displayName": "Sfx Audio Event",
+      "description": "Exemplo de uso da classe Sfx Audio Event",
+      "path": "Samples~/SfxAudioEvent"
     }
   ]
 }
