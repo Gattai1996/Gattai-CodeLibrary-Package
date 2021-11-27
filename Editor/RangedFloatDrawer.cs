@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Games.Reusable.Editor
+namespace Editor
 {
     [CustomPropertyDrawer(typeof(RangedFloat), true)]
     public class RangedFloatDrawer : PropertyDrawer {

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Games.Reusable.Editor
+namespace Editor
 {
     [CustomEditor(typeof(AudioEvent), true)]
     public class AudioEventEditor : UnityEditor.Editor
