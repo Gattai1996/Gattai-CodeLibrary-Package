@@ -1,34 +1,31 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Editor
+[CustomEditor(typeof(AudioEvent), true)]
+public class AudioEventEditor : UnityEditor.Editor
 {
-    [CustomEditor(typeof(AudioEvent), true)]
-    public class AudioEventEditor : UnityEditor.Editor
+
+    [SerializeField] private AudioSource _previewer;
+
+    public void OnEnable()
     {
+        _previewer = EditorUtility.CreateGameObjectWithHideFlags("Audio preview", HideFlags.HideAndDontSave, typeof(AudioSource)).GetComponent<AudioSource>();
+    }
 
-        [SerializeField] private AudioSource _previewer;
+    public void OnDisable()
+    {
+        DestroyImmediate(_previewer.gameObject);
+    }
 
-        public void OnEnable()
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        EditorGUI.BeginDisabledGroup(serializedObject.isEditingMultipleObjects);
+        if (GUILayout.Button("Preview"))
         {
-            _previewer = EditorUtility.CreateGameObjectWithHideFlags("Audio preview", HideFlags.HideAndDontSave, typeof(AudioSource)).GetComponent<AudioSource>();
+            ((AudioEvent) target).Play(_previewer);
         }
-
-        public void OnDisable()
-        {
-            DestroyImmediate(_previewer.gameObject);
-        }
-
-        public override void OnInspectorGUI()
-        {
-            DrawDefaultInspector();
-
-            EditorGUI.BeginDisabledGroup(serializedObject.isEditingMultipleObjects);
-            if (GUILayout.Button("Preview"))
-            {
-                ((AudioEvent) target).Play(_previewer);
-            }
-            EditorGUI.EndDisabledGroup();
-        }
+        EditorGUI.EndDisabledGroup();
     }
 }
