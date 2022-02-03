@@ -1,2 +1,2 @@
-# Gattai-Tools-Package
-Reusable components developed by Bruno Gattai.
+# Gattai-Code-Library-Package
+Code library and tools developed by Bruno Gattai.

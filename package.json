@@ -1,8 +1,8 @@
 {
-  "name": "com.brunogattai.gattaitools",
-  "version": "0.1.1",
-  "displayName": "Gattai Tools",
-  "description": "Reusable components developed by Bruno Gattai.",
+  "name": "com.brunogattai.gattaicodelibrary",
+  "version": "0.2.0",
+  "displayName": "Gattai Code Library",
+  "description": "Code library and tools developed by Bruno Gattai.",
   "unity": "2020.3",
   "unityRelease": "22f1",
   "keywords": [
@@ -13,13 +13,12 @@
   "author": {
     "name": "Bruno Gattai",
     "email": "brunogattai1996@gmail.com",
-    "url": "https://www.linkedin.com/in/bruno-gattai/"
+    "url": "https://github.com/Gattai1996"
   },
-  "type": "tool",
   "samples": [
     {
       "displayName": "Sfx Audio Event",
-      "description": "Exemplo de uso da classe Sfx Audio Event",
+      "description": "Sfx Audio Event Example",
       "path": "Samples~/SfxAudioEvent"
     }
   ]

@@ -1,6 +1,20 @@
 # Changelog
 Todas as mudanças notáveis desse projeto serão documentadas nesse arquivo.
 
+## [0.2.0] - 02-02-2022
+### Adicionado
+- Projeto renomeado para Gattai Code Library
+- Organização das pastas e Assets
+- Adição de novos ícones para os Scripts
+- SfxPlayer, um sistema para tocar SfxAudioEvents facilmente
+- GameManager, um gerenciador de jogo comum e vazio de facil extensão para qualquer game
+- MouseCursor, um sistema que controla o cursor do mouse e pode trocar a imagem do cursor
+- Pooling, um sistema de Pool que reutiliza objetos, elimina a necessidade de destruir e instanciar os objetos
+- Singletons, diversas implementações comuns do design pattern Singleton, que facilita o acesso a classes Manager
+- DialogSystem, um sistema de diálogos simples
+- InteractionsSystem, um sistema de interações entre o Player e objetos ou itens
+- QuestSystem, um sistema de missões básico
+
 ## [0.1.1] - 18-11-2021
 ### Adicionado
 - Sample da classe Sfx Audio Event
